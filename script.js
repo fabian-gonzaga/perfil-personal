@@ -1,0 +1,1 @@
+const anioactual = new Date().getFullYear(); document.getElementById("anio").textContent = anioactual;
