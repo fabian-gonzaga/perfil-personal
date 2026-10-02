@@ -11,3 +11,14 @@ boton.addEventListener("click", function () {
         boton.textContent = "🌙 Modo oscuro";
     }
 });
+
+const hora = new Date().getHours();
+const saludo = document.getElementById("saludo");
+
+if (hora < 12) {
+    saludo.textContent = "¡Buenos días! 👋";
+} else if (hora < 19) {
+    saludo.textContent = "¡Buenas tardes! 👋";
+} else {
+    saludo.textContent = "¡Buenas noches! 👋";
+}
